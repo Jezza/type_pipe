@@ -1,0 +1,15 @@
+[package]
+name = "type_pipe"
+version = "0.1.0"
+edition = "2021"
+description = "Curry types"
+license = "MIT"
+repository = "https://github.com/Jezza/type_pipe"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.82", default-features = false, features = ["parsing", "proc-macro", "derive", "visit-mut", "printing", "clone-impls"] }
+proc-macro2 = "1.0.88"
+quote = "1.0.37"
