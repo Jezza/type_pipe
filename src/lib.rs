@@ -123,6 +123,7 @@ where
     syn::visit_mut::VisitMut::visit_type_mut(&mut visitor, item);
 }
 
+#[cfg(test)]
 mod tests {
     use super::*;
 
